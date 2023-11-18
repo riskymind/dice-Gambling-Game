@@ -133,6 +133,7 @@ body {
   border-radius: 5px;
   border-bottom: 1px solid var(--clr-primary-400);
   border-left: 1px solid var(--clr-primary-400);
+  border-right: 1px solid var(--clr-primary-400);
 }
 
 .dice_world__roll_btn {
