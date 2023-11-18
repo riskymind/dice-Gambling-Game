@@ -13,19 +13,6 @@ const rolls = (array) => {
     }
   }
 
-  //check for rolls that are 1 or 6
-  // array.forEach((element, index, arr) => {
-  //   console.log(arr[index]);
-  //   console.log(index - 1);
-  //   if (arr[index - 1] == 1) {
-  //     score.push(0);
-  //   } else if (arr[index - 1] == 6) {
-  //     score.push(arr[index] * 2);
-  //   } else {
-  //     score.push(arr[index]);
-  //   }
-  // });
-
   let firstItem = array[0];
 
   let counter = 1;

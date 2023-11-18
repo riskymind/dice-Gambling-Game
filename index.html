@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Dice Game</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- Custom css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="./script.js" defer></script>
 </head>
@@ -9,44 +15,28 @@
 	<main class="main">
 		<article class="dice-world">
 
-			<picture class="dice-world_image">
-				<img src="" alt="">
+			<picture class="dice-world__image">
+				<source srcset="./assets/dice_2.jpg" media="(min-width:600px)"/>
+				<img src="./assets/dice_1.jpg" alt="dice image">
 			</picture>
 
 			<div class="dice-world__content">
-				<h2>A Dice Gambling Game</h2>
+				<h1 class="dice-world__title">A Dice Gambling Game</h1>
 
-				<p>Input your rolls and click the "roll" button to generate your result</p>
+				<p class="dice-world__desc">Input your rolls and click the "roll" button to generate your result</p>
 
-				<div>
-					<label>Result:</label><span id="gameResult" class="gameResult"></span>
-				</div>
-
-				<div class="subContainer">
+				<span id="gameResult" class="gameResult">Result will display here</span>
+				
+				<div class="flex-group">
 					<input type="number" id="inputNumber" class="inputNumber" placeholder="input rolls here" maxlength="6">
-					<label for="inputNumber">Enter your rolls:</label>
-					<button type="button" id="rollDice" class="rollDice" >Roll</button>
+					<p class="errorReport" id="errorReport">error is coming here</p>
 				</div>
 			
-				<div>
-					<p class="errorReport" id="errorReport">erroror is here</p>
-				</div>
+				<button type="button" id="rollDice" class="dice_world__roll_btn" >Roll</button>
 			</div>
 
 		</article>
-
-		<!-- <div class="instruction">
-			<h4>Intructions</h4>
-			<ul>
-				<li>Valid dice values ranges from 1 to 6.</li>
-				<li>Enter rolled dice in the box e.g. 123</li>
-				<li>Total number of rolled dice must be 3 or higher.</li>
-				<li>If a '1' is rolled, the next roll counts as 0!</li>
-				<li>If a '6' is rolled, the next roll is multiplied by 2!</li>
-			</ul>
-		</div> -->
-		
+	
 	</main>
-
 </body>
 </html>
