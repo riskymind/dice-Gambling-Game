@@ -3,10 +3,39 @@
 <head>
 	<title>Dice Game</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="./script.js" defer></script>
 </head>
 <body>
-	<div class="body">
-		<div class="instruction">
+	<main class="main">
+		<article class="dice-world">
+
+			<picture class="dice-world_image">
+				<img src="" alt="">
+			</picture>
+
+			<div class="dice-world__content">
+				<h2>A Dice Gambling Game</h2>
+
+				<p>Input your rolls and click the "roll" button to generate your result</p>
+
+				<div>
+					<label>Result:</label><span id="gameResult" class="gameResult"></span>
+				</div>
+
+				<div class="subContainer">
+					<input type="number" id="inputNumber" class="inputNumber" placeholder="input rolls here" maxlength="6">
+					<label for="inputNumber">Enter your rolls:</label>
+					<button type="button" id="rollDice" class="rollDice" >Roll</button>
+				</div>
+			
+				<div>
+					<p class="errorReport" id="errorReport">erroror is here</p>
+				</div>
+			</div>
+
+		</article>
+
+		<!-- <div class="instruction">
 			<h4>Intructions</h4>
 			<ul>
 				<li>Valid dice values ranges from 1 to 6.</li>
@@ -15,28 +44,9 @@
 				<li>If a '1' is rolled, the next roll counts as 0!</li>
 				<li>If a '6' is rolled, the next roll is multiplied by 2!</li>
 			</ul>
-		</div>
-		<div class="container">
-			<h2>A Dice Gambling Game</h2>
+		</div> -->
+		
+	</main>
 
-			<p>Input your rolls and click the "roll" button to generate your result</p>
-
-			<div>
-				<label>Result:</label><span id="gameResult" class="gameResult"></span>
-			</div>
-
-			<div class="subContainer">
-				<label for="inputNumber">Enter your rolls:</label>
-				<input type="number" id="inputNumber" class="inputNumber" placeholder="input rolls here" maxlength="6">
-				<button type="button" id="rollDice" class="rollDice" >Roll</button>
-			</div>
-			
-			<div>
-				<p class="errorReport" id="errorReport">erroror is here</p>
-			</div>
-		</div>
-	</div>
-
-	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

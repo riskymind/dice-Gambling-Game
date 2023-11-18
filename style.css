@@ -1,108 +1,113 @@
+/*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .body {
-	min-height: 100vh;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	font-family: sans-serif;
-	color: #756946; 
-	background-color: #5b97f7;
+  min-height: 100vh;
+  color: #756946;
+  background-color: #5b97f7;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .container {
-	border: 5px groove #e6e9ef;
-	min-height: 40vh;
-	text-align: center;
-	padding: 32px;
-	border-radius: 10px;
-	background-color: #13294c;
-	flex:3;
-	margin: 5px;
+  border: 5px groove #e6e9ef;
+  min-height: 40vh;
+  text-align: center;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  background-color: #13294c;
 }
 
 .instruction {
-	background-color:  #13294c;
-	min-height: 40vh;
-	text-align: center;
-	border-radius: 5px;
-	flex:2;
-	margin: 5px; 	
+  background-color: #13294c;
+  min-height: 40vh;
+  text-align: center;
+  border-radius: 5px;
 }
 
 h2 {
-	text-decoration: underline;
-	font-size: 25px;
-	font-weight: 600;
-
+  text-decoration: underline;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 p {
-	font-style: italic;
+  font-style: italic;
 }
 
 .inputNumber {
-	padding: 0.5rem;
-	margin: 1rem;
-	font-size: 1rem;
-	border-radius: 5px;
-	outline: none;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
 }
 
 .rollDice {
-	margin: 1rem auto;
-	padding: 4px 15px;
-	background-color: #6cc3d8;
-	color: #fff;
-	font-size: 15px;
-	border-radius: 7px;
-	outline: none;
-	cursor: pointer;
-	text-transform: capitalize;
+  margin: 1rem auto;
+  padding: 4px 15px;
+  background-color: #6cc3d8;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 .subContainer {
-	margin-top: 50px;
-	margin-bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .gameResult {
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	width: 50%;
-	margin:0 auto;
-	padding: 8px 4px;
-	flex: 0 0 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  padding: 8px 4px;
+  flex: 0 0 50%;
 }
 
 label {
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: underline;
-	margin-right: 3px;
-	font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-right: 3px;
+  font-style: italic;
 }
 
 .errorReport {
-	color: red;
-	text-align: center;
-	display: none;
-	font-style: italic;
+  color: red;
+  text-align: center;
+  display: none;
+  font-style: italic;
 }
 
 h4 {
- 	text-transform: uppercase;
- 	text-decoration: underline;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 ul {
-	list-style-type: square;
-	font-size: 18px;
-	margin: 4px 4px;
+  list-style-type: square;
+  font-size: 18px;
+  margin: 4px 4px;
 }
 
-
-@media (max-width: 800px) {
-	.body {
-		flex-direction: column;	
-	}
-}
+@media (max-width: 1200px) {
+  .body {
+    background-color: lightblue;
+    grid-auto-flow: row;
+    align-items: center;
+  }
+}*/
